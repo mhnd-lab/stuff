@@ -29,6 +29,9 @@ font pango:monospace 8
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+#screen reslution
+exec --no-startup-id xrandr --output LVDS-1 --mode 1366x768
+
 # start a terminal
 bindsym $mod+Return exec tilix
 
@@ -171,4 +174,5 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+        position top
 }
